@@ -1,0 +1,156 @@
+
+  s {
+    color: #9f9f9f;
+  }
+  .container {
+    position: relative;
+    width: 70vw;
+    margin: 40px auto;
+   
+  }
+  
+  .bookContainer {
+    vertical-align: top;
+    display: inline-block; /* tu dong day hang*/
+    background: rgba(242, 253, 244, 0.9);
+    width: 220px;
+    height: 430px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin: 1%;
+  }
+  
+  .bookContainer:hover {
+    background: #ffc907;
+    color: #515151;
+  }
+  
+  .bookContainer a {
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 60px;
+    height: 30px;
+    color: #2980b9;
+  }
+  
+  .bookImage {
+    width: 200px;
+    height: 240px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 20px auto 15px;
+    display: block;
+    object-fit: cover
+  }
+  
+  .bookImage img
+  {
+  
+   max-width: 100%;
+   max-height: 100%;
+   box-shadow: 3px 5px rgba(33,33,33,0.2);
+  }
+  .bookPrice {
+    background: #f8f6f2;
+    color: #27ae60;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .bookTitle {
+    margin: 0;
+    /* font-size: larger;
+    font-weight: bold; */
+  }
+  
+  .bookEdition {
+    color: rgb(51, 54, 54);
+    margin: 5px;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+  body {
+    background: rgba(250, 160, 100, .2);
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("https://bestanimations.com/Books/pretty-book-bench-nature-water-outdoors-animated-gif.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: padding-box;
+    box-shadow: 7px 0px 10px rgba(0, 0, 0, .3), -7px 0px 10px rgba(0, 0, 0, .5);
+  }
+
+  .book-shelf{
+    background-image: url(src\assets\bg_pattern.jpg);
+  }
+  
+  #headerImage img {
+    width: 120px;
+    height: 110px;
+    border: 10px solid rgba(200, 80, 70, .3);
+    border-radius: 48%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .store {
+    background: rgba(40, 80, 100, .2);
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Monospace;
+    display: block;
+    color: #fff;
+    font-size: 48px;
+    background: #dc6277;
+    width: 340px;
+    margin: auto;
+  }
+  
+  nav {
+    text-align: center;
+    margin: 25px;
+  }
+  
+  nav a {
+    text-align: center;
+    padding: .7% 2%;
+    margin: 1.5% 1%;
+    text-decoration: none;
+    background-color: rgba(200, 80, 70, .7);
+    color: white;
+    display: inline block;
+  }
+  
+  nav a:hover {
+    box-shadow: 0 1px 1px #fff;
+    text-shadow: 0 1px 1px #fff;
+  }
+  
+  section {
+    padding: 1%;
+    background:rgba(255, 255, 255, 0.45);
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-family: Helvetica, cursive;
+    color: pink;
+  }

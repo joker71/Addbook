@@ -1,0 +1,51 @@
+
+<div class="body">
+
+  <head>
+    <title>My Book Store</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="store">
+        <h1>Book Store</h1>
+        <div id="headerImage">
+          <img src="https://s22.postimg.cc/wqktmcdsx/3243335.jpg" alt="book logo" />
+        </div>
+
+        <header id="homeSection">
+          <nav>
+            <a href="#homeSection" (click)="DirectFunction('bookContainer',2)" >Home</a>
+            <a href="#aboutSection">About us</a>
+            <a href="#contactSection">Contact Book Store</a>
+            <hr style="color: red; margin: 20px;">
+          </nav>
+        </header>
+        <section class="book-shelf">
+          <div class="container" *ngIf="nextcom=='bookContainer'">
+            <div class="bookContainer" id="book01" *ngFor="let i of bookList" (click)="DirectFunction('bookinfor', i.bookid)">
+              <div class="bookImage" id={{i.bookid}}> <img src={{i.img}} alt="image"></div>
+              <p class="bookTitle">
+                {{i.bookname}} <br /> {{i.author}}
+              </p>
+              <div class="bookPrice">{{i.price}}.000</div>
+              <p class="bookEdition">{{i.rating}}/4</p>
+            </div>
+
+          </div>
+          <div *ngIf="nextcom=='bookinfor'">
+            <app-bookinfor [id]="id"></app-bookinfor>
+            <app-cmt-component [id]="id"></app-cmt-component>
+            <app-creat-coment [id]="id"></app-creat-coment>
+          </div>
+
+
+        </section>
+      </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+

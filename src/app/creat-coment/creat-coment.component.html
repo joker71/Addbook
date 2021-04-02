@@ -1,0 +1,8 @@
+<label *ngIf="function=='creat'">
+    Bình luận:
+    <textarea name="cmt" id="cmt" cols="30" rows="10" [formControl]= "content"></textarea>
+    <p>
+        <button (click)="addcoment()">post</button>
+    </p>
+    <p>{{content.value}}</p>
+</label>

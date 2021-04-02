@@ -1,0 +1,65 @@
+<div class="bookdetail clearfix">
+    <a class="image image0">
+        <img src={{book.img}} alt="img">
+        <span class="overlay"></span>
+    </a>
+    <div class="info">
+        <h1>
+            <a>{{book.bookname}}</a>
+        </h1>
+        <div class="intro clearfix">
+            <div class="attributes">
+                <ul>
+
+                    <li class="dataattr">
+                        <span>Mã sản phẩm:</span>
+                        <a href="#">{{book.bookid}}</a>
+                    </li>
+                    <li class="dataattr">
+                        <span>Tác giả: </span>
+                        <a>{{book.author}}</a>
+                    </li>
+                    <li class="dataattr">
+                        <span>Nhà xuất bản: </span>
+                        <a>{{book.nxb}}</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>Số trang: {{book.nopage}}</li>
+                    <li>Kích thước: 21x25.5 cm</li>
+                    <li>Ngày phát hành: {{book.yearxb}}</li>
+                </ul>
+
+                <div class="sbuttons">
+                    <div class="fb-like"
+                        data-href="http://nhanam.com.vn/sach/25447/khoa-hoc-ve-nau-an---the-science-of-cooking"
+                        data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="price">
+                    <p class="oldprice">
+                        Giá bìa: <span>{{book.price*1000}}</span>
+                    </p>
+                    <p>Giá Nhà Sách: <span>{{book.price*(90/100)*1000}}</span> (Đã có VAT)</p>
+                </div>
+                <div class="quantitytext">
+                    Số lượng:
+                </div>
+
+                <div class="quantity">
+                    <input type="text" value="1" onkeypress="return KeyPressQty(event)" class="tbQty" name="qty"
+                        id="quantity" style="color: red;">
+                    <span class="arrowBlock">
+                        <a class="upQty" href="javascript: upQtyClick();"></a>
+                        <a class="downQty" href="javascript: downQtyClick();"></a>
+                    </span>
+
+                </div>
+                <a>Thêm vào giỏ hàng</a>
+                <a>Mua ngay</a>
+            </div>
+        </div>
+    </div>
+</div>

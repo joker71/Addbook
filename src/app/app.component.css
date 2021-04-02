@@ -1,0 +1,9 @@
+html{
+    margin: auto;
+    font-family: Segoe UI;
+    background: #f8f6f2;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+    text-align: justify;
+    height: 100vh;
+  }

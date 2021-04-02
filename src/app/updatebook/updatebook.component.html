@@ -1,0 +1,21 @@
+<p>addbook works!</p>
+<form 
+[formGroup]="form"
+autocomplete="off"
+(ngSubmit) = "onSubmit(form.value)"
+>
+    <label for="example-text-input">Name</label><br><input class="form-control" type="text" id="example-text-input" formControlName="bookname" required/> <br>
+    <label for="example-text-input">Picture Link</label><br><input class="form-control" type="url" id="example-text-input" formControlName="img" required/><br>
+    <label for="example-text-input">Author</label><br><input class="form-control" type="text" id="example-text-input" formControlName="author" required/><br>
+    <label for="example-text-input">Publisher</label><br><input class="form-control" type="text" id="example-text-input" formControlName="nxb" required/><br>
+    <label for="example-text-input">Price</label><br><input class="form-control" type="number" id="example-text-input" formControlName="price" required/><br>
+    <label for="example-text-input">Year</label><br><input class="form-control" type="number" id="example-text-input" formControlName="yearnxb" required/><br>
+    <label for="example-text-input">Price</label><br><input class="form-control" type="number" id="example-text-input" formControlName="nopage" required/><br>
+    <label for="example-text-input">Description</label><br>
+    
+    <textarea rows="9" cols="70" formControlName="des">  
+        Mô tả về cuốn sách
+      </textarea>
+      <br>
+    <button type="submit">updatebook</button>
+</form>
